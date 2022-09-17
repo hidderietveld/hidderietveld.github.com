@@ -1,48 +1,72 @@
-.container {
-		font-family: sans-serif
-    ;
-}
-.container {
-  margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+/* box */
 
-    height: 92vh;
 
-    background: white;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 3px;
+.container {
+  margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    height: 77vh;
+
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem rgb(0, 0, 255),
+                0 0 0.8rem rgb(0, 0, 255),
+                0 0 2.8rem rgb(0, 0, 255),
+                inset 0 0 1.3rem rgb(0, 0, 255); 
 
     font-family: sans-serif;
 
     overflow-y: scroll;
-}
+
+};
+
+/* navbar */
 .tab {
-  overflow: hidden;
-  border: 1px solid black; 
-  background-color: white;
+  overflow: hidden; 
 }
 
 .tab button {
-  background-color: white;
+  background-color: #010a01;
   float: left;
-  border: none;
-  outline: none;
+  
+  border: 0.1rem solid #fff;
+  border-radius: 2rem;
+  padding: 1em;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem rgb(0, 0, 255),
+              0 0 0.8rem rgb(0, 0, 255),
+              0 0 2.8rem rgb(0, 0, 255),
+              inset 0 0 1.3rem rgb(0, 0, 255); 
+
   cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
 }
 
 
 .tab button:hover {
-  background-color: #ddd;
+ box-shadow: 
+  0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem rgb(0, 0, 145),
+  0 0 0.8rem rgb(0, 0, 145),
+  0 0 2.8rem rgb(0, 0, 145),
+  inset 0 0 1.3rem rgb(0, 0, 145);
 }
 
 
 .tab button.active {
-  background-color: #ccc;
+  box-shadow: 
+  0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem rgb(0, 0, 145),
+  0 0 0.8rem rgb(0, 0, 145),
+  0 0 2.8rem rgb(0, 0, 145),
+  inset 0 0 1.3rem rgb(0, 0, 145);
 }
 
 
@@ -52,27 +76,93 @@
   border: none;
   border-top: none;
 }
+
+/* collapsibles */
 .collapsible {
-  background-color: #5D6D7E; 
-  color: #FFF;
+  background-color: #010a01;
   cursor: pointer;
-  padding: 10px;
+  border: 0.1rem solid #fff;
+  border-radius: 2em;
+  padding: 1em;
+  box-shadow: 
+    0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem rgb(0, 0, 255),
+    0 0 0.8rem rgb(0, 0, 255),
+    0 0 2.8rem rgb(0, 0, 255),
+    inset 0 0 1.3rem rgb(0, 0, 255);
   width: 100%;
-  border: black;
   text-align: left;
   outline: none;
   font-size: 15px;
+  color: rgb(255, 255, 255);
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(0, 0, 255),
+    0 0 82px rgb(0, 0, 255),
+    0 0 92px rgb(0, 0, 255),
+    0 0 102px rgb(0, 0, 255),
+    0 0 151px rgb(0, 0, 255);
 }
-
-
-.active, .collapsible:hover {
-  background-color: #485461;
-}
-
 
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: lightgray;
+  background-color: #010a01;
+}
+
+/* achtergrond */
+body {
+  font-size: 18px;
+  font-family: "Vibur", sans-serif;
+  background-color: #010a01;
+}
+
+/* neon */
+p, h1, h2, h3, h4, h5, h6, .neonText {
+  animation: pulsate 5s infinite alternate;  
+  color: rgb(255, 255, 255);
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(0, 0, 255),
+    0 0 82px rgb(0, 0, 255),
+    0 0 92px rgb(0, 0, 255),
+    0 0 102px rgb(0, 0, 255),
+    0 0 151px rgb(0, 0, 255);
+  }
+
+  @keyframes pulsate {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(0, 0, 225),
+        0 0 80px rgb(0, 0, 255),
+        0 0 90px rgb(0, 0, 225),
+        0 0 100px rgb(0, 0, 225),
+        0 0 150px rgb(0, 0, 225);
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px rgb(0, 0, 225),
+      0 0 45px rgb(0, 0, 255),
+      0 0 55px rgb(0, 0, 225),
+      0 0 70px rgb(0, 0, 225),
+      0 0 80px rgb(0, 0, 255);
+  
+  }
 }
