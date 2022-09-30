@@ -6,28 +6,28 @@
   
   <link href="icon.ico" rel="icon" type="image/x-icon">
 
-	<link rel="stylesheet" href="style_portfolio.css">
-
 </head>
 <body>
 	
 <div class="container">
   <h1 class="neonText" style="margin-left: 15px;"> Portfolio site van Hidde Rietveld</h1>	
 <div class="tab">
-  <button style="margin-left: 15px;" class="neonText" class="tablinks" onclick="openMenu(event, 'Wie ben ik?')">Wie ben ik?</button>
-  <button style="margin-left: 15px;" class="neonText" class="tablinks" onclick="openMenu(event, 'Wat kan ik?')">Wat kan ik?</button>
-  <button style="margin-left: 15px;" class="neonText" class="tablinks" onclick="openMenu(event, 'Wat wil ik?')">Wat wil ik?</button>
+  <button style="margin-left: 15px;" class="tablinks neonText active" onclick="openMenu(event, 'Wie ben ik?')">Wie ben ik?</button>
+  <button style="margin-left: 15px;" class="tablinks neonText" onclick="openMenu(event, 'Wat kan ik?')">Wat kan ik?</button>
+  <button style="margin-left: 15px;" class="tablinks neonText" onclick="openMenu(event, 'Wat wil ik?')">Wat wil ik?</button>
 </div>
 
-<div id="Wie ben ik?" class="tabcontent">
+<div id="Wie ben ik?" class="tabcontent" style="display: block">
   <br>
   <br>
   <h3>Wie ben ik?</h3>
+  <button type="button" class="collapsible" style="margin-top: 10px;">Ik</button>
+<div class="content">
   <p>Ik ben Hidde Rietveld. Ik ben 14 jaar oud en ben geboren op 24 november 2007. <br>
   Ik woon op dit moment in Amsterdam Oost aan de rand van watergraafsmeer. <br>
   Ik zat vroeger op Basisschool De Kraal en zit nu natuurlijk op Het Amsterdams Lyceum. <br>
   </p>
-
+</div>
   <button type="button" class="collapsible" >Mijn Huis</button>
 <div class="content">
   <p>Ik woon samen in huis met mijn vader Jörgen, mijn moeder Marije, mijn broertje Cas en mijn kat Tess. <br>
@@ -38,7 +38,7 @@
   </p>
 </div>
   
-  <button type="button" class="collapsible" style="margin-top: 10px;">Sport</button>
+  <button type="button" class="collapsible">Sport</button>
 <div class="content">
   <p>Toen ik jonger was, heb ik ontzettend veel geschaatst op de Jaap Eden baan voor de HCA <br> 
   (Hardrijders Club Amsterdam). Ik deed dat dan elke zaterdag (alleen in de winter dan natuurlijk) <br>
@@ -115,8 +115,7 @@
   <br>
   <br>
   <h3>Wat wil ik?</h3>
-
-<button type="button"class="collapsible" style="margin-top: 10px;">Werk</button>
+<button type="button" class="collapsible">Werk</button>
 <div class="content">
 <p>
 	Ik weet nog niet zo zeker wat ik later voor werk wil doen. <br>
@@ -131,7 +130,7 @@
 	ook nog een bijbaantje nemen, bijvoorbeeld bij de Albert Heijn. <br>
 </p>
 </div>
-<button type="button"class="collapsible" style="margin-top: 10px;">Mijn Toekomst</button>
+<button type="button" class="collapsible" >Mijn Toekomst</button>
 <div class="content">
 <p>
 	Als ik vroeger aan mijn toekomst dacht, of gewoon toekomst in het algemeen, <br>
@@ -147,5 +146,6 @@
 </div>
 </div>
 <script type="text/javascript" src="script_portfolio.js"></script>
+<link rel="stylesheet" href="style_portfolio.css">
 </body>
 </html>
