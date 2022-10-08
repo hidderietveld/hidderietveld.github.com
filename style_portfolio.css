@@ -1,14 +1,14 @@
 /* box */
 
 .container {
-  margin-left: 100px;
+    margin-left: 100px;
     margin-right: 100px;
     margin-top: 100px;
     margin-bottom: 100px;
 
     min-height: 69vh;
 	
-	animation: flicker 3s infinite alternate;
+	  animation: flicker 3s infinite alternate;
 	
     border: 0.15rem solid #fff;
     border-radius: 2rem;
@@ -150,3 +150,14 @@ body {
 	color: rgb(255, 255, 255);
 }
 
+img {
+    border: 0.15rem solid #fff;
+    border-radius: 1rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem rgb(0, 0, 255),
+                0 0 0.8rem rgb(0, 0, 255),
+                0 0 2.8rem rgb(0, 0, 255),
+                inset 0 0 1.3rem rgb(0, 0, 255);
+}
